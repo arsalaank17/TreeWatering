@@ -25,7 +25,8 @@ View specific groups of trees as needed.
 Navigate efficiently from one tree to another.
 
 ## Screenshot
-![image](https://github.com/arsalaank17/TreeWatering/assets/62721213/f663903e-1530-4cdf-8e60-af38769d9840)
+![image](https://github.com/arsalaank17/TreeWatering/assets/62721213/eba36fea-6fb0-4d49-8ec2-54a98ec3e225)
+
 
 ## Run instructions
 Unfortunately, this cannot be run anymore because some of the code was modified to run on a particular server provided by the university but the server has now been shutdown.
