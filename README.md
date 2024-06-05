@@ -1,5 +1,9 @@
 # GRYBB tree watering web application
 
+
+## Authors
+Arsalaan , Damon, Tedora and Yifan
+
 ## Overview
 This application is a user-friendly web application designed to monitor and manage the water levels of newly planted trees. This application aims to ensure that gardeners can easily track and maintain adequate water levels for each tree, preventing tree mortality due to insufficient watering.
 
@@ -19,3 +23,9 @@ View specific groups of trees as needed.
 
 - Routing System:
 Navigate efficiently from one tree to another.
+
+## Screenshot
+![image](https://github.com/arsalaank17/TreeWatering/assets/62721213/f663903e-1530-4cdf-8e60-af38769d9840)
+
+## Run instructions
+Unfortunately, this cannot be run anymore because some of the code was modified to run on a particular server provided by the university but the server has now been shutdown.
