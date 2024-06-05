@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+    <title>homepage</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+</head>
+
+<body>
+<input type="checkbox" id="check" style="display:none">
+<header class="homeheader">
+    <label for="check">
+        <i class="fas fa-bars" id=sidebar_btn></i>
+    </label>
+    <div class="left-area">
+        <img src="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/image/preview.png" alt="GRYBB logo" class="navlogo">
+    </div>
+    <div class="right-area">
+        <div class="subnav"><a href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/home">Home</a></div>
+
+        <div class="subnav"><a href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/routing">Routing</a></div>
+
+        <div class="subnav"></i><a href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/viewData"><i
+                class="fas fa-database"></i>View Data</a></div>
+
+
+        <div class="subnav">
+
+            <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/about">about us</a><br>
+                <a href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/contact">contact</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><i class="fas fa-user-circle"></i></button>
+        </div>
+    </div>
+    </div>
+</header>
+
+<div class="sidebar">
+    <div class="searchbox">
+        <input type="text" placeholder="Search by id" class="searchinput" id="search">
+        <button class="searchbtn" id="searchbtn" onclick="searchByID();"><i class="fas fa-search"></i></button>
+    </div>
+    <h3>Filter</h3>
+
+    <div class="WLfilter" id="wl-filterContainer">
+        <h4>By waterlevel</h4>
+        <label class="container">
+            <input type="checkbox" name="filter-by-wl" id="redTree" value="low">Low water Level
+        </label>
+
+        <label class="container">
+            <input type="checkbox" name="filter-by-wl" id="yellowTree" value="middle">Medium water Level
+        </label>
+
+        <label class="container">
+            <input type="checkbox" name="filter-by-wl" id="greenTree" value="high">High water level
+        </label>
+        <label class="container">
+            <button id="Wlbtn"  class = "filterbtn"  onclick="handleWlCheckbox()">Filter waterlevel</button>
+        </label>
+
+
+    </div>
+    <div class="Typefilter" id="type-filter">
+        <h4>By Species</h4>
+        <label class="container">
+            <input type="checkbox" name="filter-by-type" id="Maple" value="Maple">Maple
+        </label>
+
+        <label class="container">
+            <input type="checkbox" name="filter-by-type" id="Cherry" value="Cherry">Cherry
+        </label>
+
+        <label class="container">
+            <input type="checkbox" name="filter-by-type" id="Regulier" value="Regulier">Regulier
+        </label>
+        <label class="container">
+            <button id="Typebtn" class = "filterbtn"  onclick="handleTypeCheckbox()">Filter type</button>
+        </label>
+    </div>
+
+
+    <div class="Cityfilter" id="city-filter">
+        <h4>By city</h4>
+        <label class="container">
+            <input type="checkbox" name="filter-by-city" id="Enschede" value="Enschede">Enschede
+        </label>
+
+        <label class="container">
+            <input type="checkbox" name="filter-by-city" id="Deurningen" value="Deurningen">Deurningen
+        </label>
+        <label class="container">
+            <input type="checkbox" name="filter-by-city" id="Hengelo" value="Hengelo">Hengelo
+        </label>
+        <label class="container">
+            <input type="checkbox" name="filter-by-city" id="Oldenzaal" value="Oldenzaal">Oldenzaal
+        </label>
+        <label class="container">
+            <button id="Citybtn" class = "filterbtn"  onclick="handleCityCheckbox()">Filter city</button>
+        </label>
+    </div>
+
+</div>>
+
+<div class="changeWLpopup" id="changewlpopup">
+    <div class="overLay"></div>
+    <div class="changecontent">
+        <h3>change waterlevel</h3>
+        <div class="rangevalue">
+            <p id="newValue">new value: <span id="newlvalue"></span></p>
+            <input id="myrange" type="range" value="1" min="0" max="10" class="slider">
+        </div>
+        <button id="confirmChange" onclick="confirmchange();"> confirm </button>
+        <button id="cancelChange" onclick="changeWLPopup();">cancel </button>
+    </div>
+</div>
+
+<div id="map"></div>
+<script src="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/mapscript.js"></script>
+<script src="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/WaterlevelPopup.js"></script>
+<script src="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/filter.js"></script>
+
+</body>
+
+</html>

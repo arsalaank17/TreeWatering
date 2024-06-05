@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!-- Index page of the Online Book Store. -->
+
+<html lang=”en”>
+
+<head>
+    <title>viewData</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/table.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+
+<body>
+<input type="checkbox" id="check" style="display:none">
+<header class="homeheader">
+    <label for="check">
+        <i class="fas fa-bars" id=sidebar_btn></i>
+    </label>
+    <div class="left-area">
+        <img src="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/image/preview.png" alt="GRYBB logo" class="navlogo">
+    </div>
+    <div class="right-area">
+        <div class="subnav"><a href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/home">Home</a></div>
+        <div class="subnav"><a href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/routing">Routing</a></div>
+        <div class="subnav"></i><a href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/viewData"><i
+                class="fas fa-database"></i>View Data</a></div>
+
+        <div class="subnav">
+            <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/about">about us</a><br>
+                <a href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/contact">contact</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><i class="fas fa-user-circle"></i></button>
+        </div>
+    </div>
+    </div>
+</header>
+
+
+<h3 style="margin-top:100px">View Trees</h3>
+
+<div id="tree-info">
+    <p>No Data found!</p>
+</div>
+
+
+
+<div class="EditTreeInfoForm" id="editInfo">
+    <div class="overLay"></div>
+    <div class="editcontent">
+        <h3>Edit Trees info</h3>
+        <table class="EditTreeTable">
+            <tr>
+                <td class="titletxt">id</td>
+                <!--                        cannot change id-->
+                <td> <input type="text" value="id" id ="editId" readonly></td>
+            </tr>
+            <tr>
+                <td class="titletxt">Species</td>
+                <td><input type="text" placeholder="Species" id="editSpeices" pattern="[A-Za-z]" ></td>
+            </tr>
+            <tr>
+                <td class="titletxt">City</td>
+                <td><input type="text" placeholder="city" id="city" ></td>
+            </tr>
+            <tr>
+                <td class="titletxt">WaterLevel</td>
+                <td><input type="number" placeholder="range 1 to 10" id="editWaterLevel" min ="0" max="10"></td>
+            </tr>
+            <tr>
+                <td class="titletxt">Location</td>
+                <td><input type="number" placeholder="Latitude" id="editLat" ></td>
+            </tr>
+
+            <tr>
+                <td class="titletxt">   </td>
+                <td><input type="number" placeholder="Longitude" id="editLng" ></td>
+            </tr>
+        </table>
+        <button id="confirmEdit" onclick="confirmEdit();"> confirm </button>
+        <button id="cancelEdit" onclick="CancelEditTreeInfo();">cancel </button>
+    </div>
+</div>
+
+
+
+<div class="DeleteTreeForm" id="deleteInfo">
+    <div class="overLay"></div>
+    <div class="deletecontent">
+        <h3>Delete Tree from Database?</h3>
+        <button id="confirmDelete" onclick="confirmDelete();"> confirm </button>
+        <button id="cancelDelete" onclick="CancelDeleteTreeInfo();">cancel </button>
+    </div>
+</div>
+
+</body>
+<script src="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/viewData.js"></script>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+    <html lang="en">
+
+      <head>
+        <title>register</title>
+        <meta charset="UTF-8">
+          <link rel="stylesheet" href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/style.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+          <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" type="text/css" media="screen, projection">
+          <meta charset="UTF-8">
+    </head>
+
+    <body  class="start">
+        <div class="wrapper">
+            <img src="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/image/preview.png" alt="GRYBB logo" class="logo">
+            <h1>Register</h1>
+            <form action="">
+                <input TYPE="TEXT" placeholder="Username" name="username"  id="username" pattern="[A-Za-z0-9]" title="only letter and number aloowed" required>
+                <input TYPE="password" placeholder="Password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required
+                       title="Must contain at least 8 or more characters" required>
+                <p>Role:
+                    <select name="role" id="role" class="selectRole">
+                    <option value="Government">Government</option>
+                    <option value="Gardener">Gardener</option>
+                </select>
+                </p>
+
+                <p><br></p>
+                <input type="button" onclick = "register()" value="Sign Up">
+            </form>
+            
+
+        </div>
+        <div id="overlay-area"></div>
+    </body>
+
+      <script>
+          function register() {
+              let user = document.getElementById("username").value;
+              let pass = document.getElementById("password").value;
+              let role = document.getElementById("role").value;
+              var xmlhttpPost = new XMLHttpRequest();
+              xmlhttpPost.onreadystatechange = function () {
+                  if(this.readyState === 4) {
+                      var message = xmlhttpPost.responseText;
+                      var location = xmlhttpPost.getResponseHeader("location");
+                      alert (message);
+                      if(location !=null) {
+                          window.location.href = "http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/login";
+                      }else {
+                          document.getElementById("username").value ="";
+                          document.getElementById("password").value = "";
+                          window.location.href = "http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/login";
+                      }
+                  }
+              }
+              var url = new URL("http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/register");
+              url.searchParams.set("username",user);
+              url.searchParams.set("password",pass);
+              url.searchParams.set("role",role);
+              xmlhttpPost.open("POST",url,true);
+              xmlhttpPost.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+              xmlhttpPost.send();
+          }
+      </script>
+    </html>

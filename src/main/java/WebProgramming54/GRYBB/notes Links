@@ -1,0 +1,83 @@
+How to start up login with session, redirection and database:
+https://www.codejava.net/coding/how-to-code-login-and-logout-with-java-servlet-jsp-and-mysql
+https://www.codejava.net/java-ee/servlet/how-to-send-redirect-from-java-servlet
+https://www.codejava.net/java-ee/servlet/how-to-use-session-in-java-web-application
+
+RESTFUL
+https://docs.oracle.com/cd/E19798-01/821-1841/6nmq2cp1v/index.html
+
+for using dynamic html
+https://www.tutorialspoint.com/jsp/jsp_quick_guide.htm
+
+//redirection javascript
+https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
+
+load file and convert it to String
+https://stackoverflow.com/questions/12035316/reading-entire-html-file-to-string/12035413
+
+sessionS!
+https://coderanch.com/t/724405/java/Block-access-web-pages-user
+https://stackoverflow.com/questions/15519454/how-to-access-session-variables-and-set-them-in-javascript
+
+jsp
+https://stackoverflow.com/questions/17419727/how-to-use-session-in-jsp-pages-to-get-information
+
+perfect use of sending the file:
+https://stackoverflow.com/questions/11489929/how-to-return-actual-html-file-using-jax-rs
+
+cookies in sessions
+https://www.baeldung.com/java-servlet-cookies-session
+
+cookies in javascript
+https://www.w3schools.com/js/js_cookies.asp
+
+get the absolute path of the current working directly in project
+
+Remember me (optional)
+https://stackoverflow.com/questions/4773609/what-is-a-relatively-secure-way-of-using-a-login-cookie
+
+https://codepen.io/nikhil8krishnan/pen/WvYPvv table fixed
+
+https://www.tutorialspoint.com/how-to-read-retrieve-data-from-database-to-json-using-jdbc
+
+https://stackoverflow.com/questions/57096346/leafletjs-how-to-delete-marker-with-button-in-bind-popup
+
+http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/image/preview.png for getting preview.png and the rest via webapp/resoursces
+http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/style.css
+
+minor adjustments
+--still need security for injections
+--humans/bickers/gardeners can also sensor water levels, tree is sick
+
+--the path of files are absolute!!!!  DONE
+--visual effects of watering,  DONE
+--TOMCAT mapscriptold.js the trees pictures must be shown. DONE
+--reset a constant timeout at logged in or reset timeout when user intereacts with the server?
+--sessions ---> cookies better
+
+--. government worker, can see all the gardeners progress.
+
+
+--things to doL
+-- security log in DONE
+-- homepage map DONE
+1. different accounts roles:
+    1a gardener, is a sensor, does water level focus routing
+    1b route planner with current location and route tree
+    1c normal user, citizans only map
+
+-- backend communication database DONE
+2. sorting is with query DREAM
+3. get data of ViewData and Trees on map via database /so map of watering trees for gardeners
+4. insert tree: import & export file of trees/integrate data GRYBB or fake data
+5. delete/insert tree with coordination and hover the coordination on mouseclick
+
+
+<<<<<<< Updated upstream
+=======
+after sprint 4, with current location and get route for filtered trees
+-- database schema
+-- user schemas
+-- security report
+-- testing report
+>>>>>>> Stashed changes

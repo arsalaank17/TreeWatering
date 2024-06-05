@@ -1,0 +1,72 @@
+
+<!DOCTYPE HTML>
+<!-- Index page of the Online Book Store. -->
+
+<html lang=”en”>
+<head>
+    <title>GRYBB</title>
+    <link rel="stylesheet" href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!--    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" type="text/css" media="screen, projection">-->
+    <meta charset="UTF-8">
+</head>
+
+
+<body class="start">
+
+    <div class="wrapper">
+        <img src="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/image/preview.png" alt="GRYBB logo"  class="logo">
+        <h1>Sign In</h1>
+        <form action="" autocomplete="off">
+            <input TYPE="TEXT" placeholder="Username" id="username" autocomplete="off" pattern="[[A-Za-z0-9]]">
+            <input TYPE="password" placeholder="Password"  id="password" autocomplete="off">
+            <input type="button" onclick = "Login()" value="Sign In">
+<!--            <button onclick="Login()">Sign In</button>-->
+        </form>
+        <div class="bottom-text">
+            <p>Don't have an account? <a href="register">Register here</a></p>
+            <p id="message" style="color:greenyellow"></p>
+    </div>
+</div>
+<div id="overlay-area"></div>
+</body>
+
+<script>
+function Login() {
+    //check for validate username and password?
+    let user = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+    var xmlhttpPost = new XMLHttpRequest();
+    xmlhttpPost.onreadystatechange = function () {
+        if(this.readyState === 4) {
+            var message = xmlhttpPost.responseText;
+            var location = xmlhttpPost.getResponseHeader("location");
+            console.log (message);
+
+
+            if(location !=null) {   //location has been shared where you need to go!
+                //redirect to the location
+                window.location.href = location;
+            }else {
+                document.getElementById("password").value = "";
+                document.getElementById("message").innerText = message;
+             }
+
+
+        }
+    }
+    var url = new URL("http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/login");
+    url.searchParams.set("username",user);
+    url.searchParams.set("password",pass);
+
+    xmlhttpPost.open("POST",url,true);
+    xmlhttpPost.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xmlhttpPost.send();
+
+    //user link for parameter, XMLROOT element or ... application FORMParam,
+    //windows onload check if user is logged in with httpsession
+}
+
+
+</script>
+</html>

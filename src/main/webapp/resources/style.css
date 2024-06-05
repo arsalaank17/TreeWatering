@@ -1,0 +1,460 @@
+body.start {
+  margin: 0;
+  padding: 0;
+  background-image: url(http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/image/background.png);
+  background-size: cover;
+  /*background-position: center;*/
+  font-family: cursive;
+}
+
+body.homepage {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.wrapper {
+  width: 400px;
+  height: 420px;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  padding: 60px 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  box-shadow: 8px 8px 50px #000;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(7, 80, 23);
+  text-align: center;
+  margin-bottom: 8%;
+  font-family: cursive;
+}
+
+.logo {
+  width: 214px;
+  height: 70.65px;
+  position: absolute;
+  top: -30px;
+  left: 100px;
+}
+.wrapper input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.wrapper input[TYPE="text"],
+.wrapper input[TYPE="password"] {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  outline: none;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 1;
+  color: #000;
+}
+.wrapper input[type="button"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #1f5f05;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.wrapper input[type="button"]:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.wrapper a {
+  font-size: 18px;
+  text-decoration: underline;
+  color: #000;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.wrapper a:hover {
+  color: rgb(3, 14, 168);
+  opacity: 2;
+}
+.bottom-text {
+  color: #fff;
+}
+.bottom-text input {
+  width: 10%;
+  float: left;
+}
+
+select{
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+}
+
+.bottom-text a {
+  float: right;
+}
+#overlay-area {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: -5;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+.homeheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+  width: 100%;
+  height: 30px;
+}
+
+.left-area img {
+  width: 140px;
+  height: 46.2px;
+}
+.right-area {
+  padding: 5px;
+  float: right;
+  overflow: hidden;
+  background-color: rgb(245, 245, 245);
+  margin-right: 70px;
+  margin-top: -60px;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.right-area a {
+  float: right;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-align: center;
+}
+
+.right-area a:hover,
+.subnav:hover .subnavbtn {
+  background-color: rgb(192, 192, 192);
+}
+
+.subnav-content {
+  float: right;
+  padding: 5px;
+  display: none;
+  position: absolute;
+  background-color: rgb(245, 245, 245);
+  z-index: 1;
+}
+
+.subnav-content a {
+  padding: 5px;
+  float: left;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: rgb(226, 226, 226);
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.sidebar {
+  background: rgb(244, 244, 244);
+  margin-top: 60px;
+  padding-top: 30px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  width: 210px;
+  height: 100%;
+  transition: 0.5s;
+  transition-property: left;
+  opacity: 1;
+  animation: normal;
+}
+.sidebar:hover{
+  overflow-y: scroll;
+}
+.sidebar h3 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+.sidebar h4 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+.sidebar label {
+  color: rgb(0, 0, 0);
+  display: block;
+  width: 100%;
+  line-height: 40px;
+  text-decoration: none;
+  padding-left: 40px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  transition: 0.1s;
+}
+
+.sidebar label:hover {
+  background: rgb(189, 189, 189);
+}
+
+.sidebar i {
+  padding-right: 10px;
+}
+
+
+label #sidebar_btn {
+  position: absolute;
+  z-index: 5;
+  color: black;
+  position: fixed;
+  cursor: pointer;
+  left: 175px;
+  font-size: 25px;
+  margin: 5px;
+}
+
+label #sidebar_btn:hover {
+  color: rgb(85, 113, 240);
+}
+
+#check:checked ~ .sidebar {
+  display: none;
+}
+
+.searchbox {
+  height: 35px;
+  width: 110px;
+  margin-left: 10px;
+  background: none;
+}
+
+.searchbox input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 15px;
+  background: rgb(212, 211, 211);
+  outline: none;
+  border-radius: 50px;
+  padding: 0 60px 0 20px;
+}
+
+.searchbtn {
+  position: absolute;
+  right: 22px;
+  top: 33px;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(212, 211, 211);
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.searchbtn:hover {
+  color: rgb(9, 13, 248);
+}
+
+.rightsidebar {
+  margin-top: 200px;
+  right: 60px;
+  position: fixed;
+  z-index: 1;
+
+  width: 25px;
+  opacity: 1;
+}
+
+.addtree {
+  font-size: 20px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.deletetree {
+  font-size: 20px;
+  height: 35px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#map {
+  position: absolute;
+  z-index: 0;
+  margin-top: 30px;
+  margin-left: 0px;
+  padding: 0;
+  width: 100%;
+  height: 95%;
+}
+
+.rangesliderCtn {
+  margin-top: 200px;
+  right: 500px;
+  position: fixed;
+  z-index: 1;
+  opacity: 1;
+}
+
+.centeredInputSpace {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  /*margin-left: -25%;*/
+  /*margin-top: -25%;*/
+  transform: translate(-50%, -50%);
+  border: 3px solid #73ad21;
+  background-color: green;
+  opacity: 50%;
+}
+.changeWLpopup .overLay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  opacity: 0.7;
+  z-index: 1;
+  display: none;
+}
+
+.changeWLpopup .changecontent {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 450px;
+  height: 220px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.changeWLpopup .rangevalue #orivalue,
+.changeWLpopup .rangevalue #newValue {
+  position: absolute;
+  font-family: cursive;
+  font-size: 20px;
+  top: 42%;
+}
+.changeWLpopup .rangevalue #orivalue {
+  left: 80px;
+}
+.changeWLpopup .rangevalue #newValue {
+  right: 100px;
+}
+
+.changeWLpopup .slider {
+  position: absolute;
+  left: 120px;
+  width: 50%;
+  opacity: 0.8;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.changeWLpopup #confirmChange,
+.changeWLpopup #cancelChange {
+  position: absolute;
+  bottom: 20px;
+  width: 90px;
+  background: rgb(154, 202, 204);
+  color: #000;
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: 200;
+  line-height: 30px;
+  text-align: center;
+}
+
+.changeWLpopup #confirmChange {
+  left: 120px;
+}
+.changeWLpopup #cancelChange {
+  right: 120px;
+}
+
+.changeWLpopup.active .overLay {
+  display: block;
+}
+
+.changeWLpopup.active .changecontent {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+.routerbtn{
+  width: 160px;
+  color: black;
+  font-size: 12px;
+  font-family: cursive;
+  font-weight: bold;
+  line-height: 30px;
+}
+.filterbtn{
+  width: 160px;
+  color: black;
+  font-size: 12px;
+  font-family: cursive;
+  font-weight: bold;
+  line-height: 30px;
+
+}

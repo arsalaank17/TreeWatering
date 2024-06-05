@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Routing</title>
+    <script src="https://cdn.jsdelivr.net/npm/graphhopper-js-api-client/dist/graphhopper-client.js"></script>
+    <link rel="stylesheet" href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+</head>
+<body>
+<input type="checkbox" id="check" style="display:none">
+<header class="homeheader">
+    <label for="check">
+        <i class="fas fa-bars" id=sidebar_btn></i>
+    </label>
+    <div class="left-area">
+        <img src="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/image/preview.png" alt="GRYBB logo" class="navlogo">
+    </div>
+    <div class="right-area">
+        <div class="subnav"><a href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/home">Home</a></div>
+
+        <div class="subnav"><a href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/routing">Routing</a></div>
+
+        <div class="subnav"></i><a href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/viewData"><i
+                class="fas fa-database"></i>View Data</a></div>
+
+
+        <div class="subnav">
+
+            <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/about">about us</a><br>
+                <a href="http://grybb-4.paas.hosted-by-previder.com/GRYBB/rest/contact">contact</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn"><i class="fas fa-user-circle"></i></button>
+        </div>
+    </div>
+    </div>
+</header>
+
+<div class="sidebar">
+
+    <div id="filter">
+        <h3>Which Trees do you want to water?</h3>
+        <label class="container">
+            <input type="button"  class="routerbtn" onclick="CreateRouteOfCertainTrees()" value="All trees for Route!">
+        </label>
+
+        <label class="container">
+            <input type="button" class="routerbtn" onclick="SelectTreesOnMap()" value="Select Trees For Route!">
+        </label>
+
+    </div>
+
+    <div id="selectTrees" style="display: none">
+
+        <label class="container">
+            <input type="button"  class="routerbtn" onclick="CreateRouteOfSelectTrees()" value="Route your Selected Trees!">
+        </label>
+
+        <label class="container">
+            <input type="button"  class="routerbtn" onclick="SelectTreesOnMap()" value="Go Back calculating route!">
+        </label>
+
+
+    </div>
+
+    <div id="routeDescription" style="display: none"></div>
+
+</div>
+<div id="map"></div>
+<script src="http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/routingScript.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,68 @@
+body.aboutpage {
+    margin: 0;
+    padding: 0;
+    background-image: url(http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/image/about-us-background.png);
+    background-size: cover;
+    position: center;
+}
+.aboutPageContent {
+    margin-top: 250px;
+    position:relative;
+    text-align: center;
+    width: 40%;
+    top: 50%;
+    left: 30%;
+}
+.contentlogo {
+    height: 80px;
+}
+
+.aboutPageContent p {
+    margin-top: 60px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+
+.contactPageContent {
+    margin-top: 250px;
+    position:relative;
+    text-align: center;
+    width: 40%;
+    top: 50%;
+    left: 30%;
+}
+
+.contactPageContent h3 {
+    font-size: 50px;
+}
+
+.profilephoto {
+    height: 200px;
+    width: 200px;
+}
+.spacer {
+    height: 120px;
+}
+
+.contactTable {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.column-spacer {
+    width: 80px;
+}
+
+.developedby {
+    margin-top: 50px;
+    bottom: 5px;
+    left: 45%;
+}
+footer {
+    position: fixed;
+    bottom: 5px;
+    right: 10%;
+    padding: 3px;
+}

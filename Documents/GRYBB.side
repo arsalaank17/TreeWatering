@@ -1,0 +1,566 @@
+{
+  "id": "6990e2b0-6618-4823-932f-9fb5e77f0da8",
+  "version": "2.0",
+  "name": "GRYBB",
+  "url": "http://grybb-4.paas.hosted-by-previder.com",
+  "tests": [{
+    "id": "a632bbfb-4804-4c1e-b0bb-e2fe86475097",
+    "name": "Login",
+    "commands": [{
+      "id": "72c98702-823c-4a0b-9ae1-e4d6cf3d3255",
+      "comment": "",
+      "command": "open",
+      "target": "/GRYBB/rest/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8fdcba2c-52be-49e2-afba-5d6f7c41e5c6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db3e79f0-ec5d-47d2-bdd6-5fe5b009bbe6",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "wrongcredentials"
+    }, {
+      "id": "4e131714-4607-4129-9781-c8ad189ae08a",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "yeet"
+    }, {
+      "id": "ad4ae7e0-5c2d-4265-ae15-a3cb18ca8054",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='Sign In']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce89390f-2af7-4b95-a690-7cc34d0c0cf9",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Damon"
+    }, {
+      "id": "88590966-3376-42dc-ab27-7e44218f6639",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "BullDown"
+    }, {
+      "id": "549a1431-ef65-443a-9f57-31958fbf982d",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='Sign In']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bd3bd879-8afe-49cd-a93d-cfcce43bda06",
+    "name": "HomePageMap ",
+    "commands": [{
+      "id": "fe4929b8-3405-4c6f-9ef7-b2eb8958774b",
+      "comment": "",
+      "command": "open",
+      "target": "/GRYBB/rest/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d37c2ac0-1a84-473f-b0e0-fdd897b293c0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12e393e1-c538-4290-9ac1-c1822c3cd2df",
+      "comment": "",
+      "command": "click",
+      "target": "css=#wl-filterContainer > .container:nth-child(3)",
+      "targets": [
+        ["css=#wl-filterContainer > .container:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='wl-filterContainer']/label[2]", "xpath:idRelative"],
+        ["xpath=//label[2]", "xpath:position"],
+        ["xpath=//label[contains(.,'Medium water Level')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aeac02df-d04d-4732-9e5a-e0d34d2b3cc7",
+      "comment": "",
+      "command": "click",
+      "target": "id=Wlbtn",
+      "targets": [
+        ["id=Wlbtn", "id"],
+        ["css=#Wlbtn", "css:finder"],
+        ["xpath=//button[@id='Wlbtn']", "xpath:attributes"],
+        ["xpath=//div[@id='wl-filterContainer']/label[4]/button", "xpath:idRelative"],
+        ["xpath=//label[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filter waterlevel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55abf337-d815-422d-9cb9-12d8d6849137",
+      "comment": "",
+      "command": "click",
+      "target": "css=#type-filter > .container:nth-child(4)",
+      "targets": [
+        ["css=#type-filter > .container:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='type-filter']/label[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/label[3]", "xpath:position"],
+        ["xpath=//label[contains(.,'Regulier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b9428a4-aa7f-4812-b5f1-4767a1746582",
+      "comment": "",
+      "command": "click",
+      "target": "css=#wl-filterContainer > .container:nth-child(3)",
+      "targets": [
+        ["css=#wl-filterContainer > .container:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='wl-filterContainer']/label[2]", "xpath:idRelative"],
+        ["xpath=//label[2]", "xpath:position"],
+        ["xpath=//label[contains(.,'Medium water Level')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf13bad7-768e-4869-ae32-7244af0716b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=Typebtn",
+      "targets": [
+        ["id=Typebtn", "id"],
+        ["css=#Typebtn", "css:finder"],
+        ["xpath=//button[@id='Typebtn']", "xpath:attributes"],
+        ["xpath=//div[@id='type-filter']/label[4]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/label[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filter type')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2906d82e-41c3-41ba-8999-118c7830991f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.leaflet-marker-icon",
+      "targets": [
+        ["css=.leaflet-marker-icon", "css:finder"],
+        ["xpath=//img[contains(@src,'http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/image/yellowtree.png')]", "xpath:img"],
+        ["xpath=//div[@id='map']/div/div[4]/img", "xpath:idRelative"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65954d41-0f50-418e-9f3c-24e9b1f2c3b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=×",
+      "targets": [
+        ["linkText=×", "linkText"],
+        ["css=.leaflet-popup-close-button", "css:finder"],
+        ["xpath=//a[contains(text(),'×')]", "xpath:link"],
+        ["xpath=//div[@id='map']/div/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#close')]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59cee6b9-c00b-418b-a442-8e7e541758d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#type-filter > .container:nth-child(4)",
+      "targets": [
+        ["css=#type-filter > .container:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='type-filter']/label[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/label[3]", "xpath:position"],
+        ["xpath=//label[contains(.,'Regulier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b371c2b6-c347-494c-86a6-0e4c5f7f6d8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#city-filter > .container:nth-child(2)",
+      "targets": [
+        ["css=#city-filter > .container:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='city-filter']/label", "xpath:idRelative"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Enschede')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aac2ea53-4766-40ec-95f1-3545e9ebbe8c",
+      "comment": "",
+      "command": "click",
+      "target": "id=Citybtn",
+      "targets": [
+        ["id=Citybtn", "id"],
+        ["css=#Citybtn", "css:finder"],
+        ["xpath=//button[@id='Citybtn']", "xpath:attributes"],
+        ["xpath=//div[@id='city-filter']/label[5]/button", "xpath:idRelative"],
+        ["xpath=//label[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Filter city')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4868b58a-066b-45a4-9600-d733fd75170c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.leaflet-marker-icon:nth-child(1)",
+      "targets": [
+        ["css=.leaflet-marker-icon:nth-child(1)", "css:finder"],
+        ["xpath=//img[contains(@src,'http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/image/redtree.png')]", "xpath:img"],
+        ["xpath=//div[@id='map']/div/div[4]/img", "xpath:idRelative"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e275c9c-89f5-420e-b72c-e859cbf1bee4",
+      "comment": "",
+      "command": "click",
+      "target": "id=changewater",
+      "targets": [
+        ["id=changewater", "id"],
+        ["css=#changewater", "css:finder"],
+        ["xpath=//button[@id='changewater']", "xpath:attributes"],
+        ["xpath=//div[@id='map']/div/div[6]/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'change waterlevel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b57743d-7b2d-4546-9fc8-dae1a26f578b",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=myrange",
+      "targets": [
+        ["id=myrange", "id"],
+        ["css=#myrange", "css:finder"],
+        ["xpath=//input[@id='myrange']", "xpath:attributes"],
+        ["xpath=//div[@id='changewlpopup']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "152.5,4.566650390625"
+    }, {
+      "id": "2c47a492-9d39-487c-b3b4-cbd2e35e11ff",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=myrange",
+      "targets": [
+        ["id=myrange", "id"],
+        ["css=#myrange", "css:finder"],
+        ["xpath=//input[@id='myrange']", "xpath:attributes"],
+        ["xpath=//div[@id='changewlpopup']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "152.5,4.566650390625"
+    }, {
+      "id": "a6e76020-11e2-47a4-a2f5-e2f38897eac8",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=myrange",
+      "targets": [
+        ["id=myrange", "id"],
+        ["css=#myrange", "css:finder"],
+        ["xpath=//input[@id='myrange']", "xpath:attributes"],
+        ["xpath=//div[@id='changewlpopup']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "152.5,4.566650390625"
+    }, {
+      "id": "f6d0c50d-9b08-41ae-9d5b-0c202c0fb640",
+      "comment": "",
+      "command": "type",
+      "target": "id=myrange",
+      "targets": [
+        ["id=myrange", "id"],
+        ["css=#myrange", "css:finder"],
+        ["xpath=//input[@id='myrange']", "xpath:attributes"],
+        ["xpath=//div[@id='changewlpopup']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "7"
+    }, {
+      "id": "75806634-5111-418f-876a-fe79cf271fd3",
+      "comment": "",
+      "command": "click",
+      "target": "id=myrange",
+      "targets": [
+        ["id=myrange", "id"],
+        ["css=#myrange", "css:finder"],
+        ["xpath=//input[@id='myrange']", "xpath:attributes"],
+        ["xpath=//div[@id='changewlpopup']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c5cacac-4dcb-4afa-b7f3-6e7fdeaa20ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirmChange",
+      "targets": [
+        ["id=confirmChange", "id"],
+        ["css=#confirmChange", "css:finder"],
+        ["xpath=//button[@id='confirmChange']", "xpath:attributes"],
+        ["xpath=//div[@id='changewlpopup']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'confirm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "080e3615-2071-4154-93ac-d0c746a95099",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb5f2847-ce4d-4515-8416-c0f14b35907b",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "fe45a927-ee1e-457e-929e-851d456383e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-search",
+      "targets": [
+        ["css=.fa-search", "css:finder"],
+        ["xpath=//button[@id='searchbtn']/i", "xpath:idRelative"],
+        ["xpath=//body/div/div/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "36b7cd48-dd0d-4121-a471-428ddcac7816",
+    "name": "Routing",
+    "commands": [{
+      "id": "0886cc2d-3d5f-4dc2-b207-142ed8fd87dc",
+      "comment": "",
+      "command": "open",
+      "target": "/GRYBB/rest/routing",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c64384b-6e26-4737-9c36-c5595707e627",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1800x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b4197d7-4404-4a84-8e99-5c9bd9b3e877",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=map",
+      "targets": [
+        ["id=map", "id"],
+        ["css=#map", "css:finder"],
+        ["xpath=//div[@id='map']", "xpath:attributes"],
+        ["xpath=//body/div[2]", "xpath:position"]
+      ],
+      "value": "1208,294"
+    }, {
+      "id": "a8ed61f9-e8f6-4af8-8537-c34c82512e22",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=map",
+      "targets": [
+        ["id=map", "id"],
+        ["css=#map", "css:finder"],
+        ["xpath=//div[@id='map']", "xpath:attributes"],
+        ["xpath=//body/div[2]", "xpath:position"]
+      ],
+      "value": "1208,294"
+    }, {
+      "id": "ed33db10-8786-45c9-a2e7-f09bc77234df",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=map",
+      "targets": [
+        ["id=map", "id"],
+        ["css=#map", "css:finder"],
+        ["xpath=//div[@id='map']", "xpath:attributes"],
+        ["xpath=//body/div[2]", "xpath:position"]
+      ],
+      "value": "1208,294"
+    }, {
+      "id": "26fa17ad-97aa-4867-8e4c-4e1f5cad2db7",
+      "comment": "",
+      "command": "click",
+      "target": "id=map",
+      "targets": [
+        ["id=map", "id"],
+        ["css=#map", "css:finder"],
+        ["xpath=//div[@id='map']", "xpath:attributes"],
+        ["xpath=//body/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73efbe75-171b-4129-86ea-27f94538b4a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#filter > .container:nth-child(2) > input",
+      "targets": [
+        ["css=#filter > .container:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@value='All trees for Route!']", "xpath:attributes"],
+        ["xpath=//div[@id='filter']/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33620f68-9291-441b-94aa-a33263427c44",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container:nth-child(3) > .routerbtn",
+      "targets": [
+        ["css=.container:nth-child(3) > .routerbtn", "css:finder"],
+        ["xpath=//input[@value='Select Trees For Route!']", "xpath:attributes"],
+        ["xpath=//div[@id='filter']/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9255012-adfb-400f-aa58-02d88097bae5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.leaflet-marker-icon:nth-child(3)",
+      "targets": [
+        ["css=.leaflet-marker-icon:nth-child(3)", "css:finder"],
+        ["xpath=//img[contains(@src,'http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/image/greentree.png')]", "xpath:img"],
+        ["xpath=//div[@id='map']/div/div[4]/img[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/img[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad4f9842-73d1-4da4-9902-7d77752f3297",
+      "comment": "",
+      "command": "click",
+      "target": "css=.leaflet-marker-icon:nth-child(2)",
+      "targets": [
+        ["css=.leaflet-marker-icon:nth-child(2)", "css:finder"],
+        ["xpath=//img[contains(@src,'http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/image/redtree.png')]", "xpath:img"],
+        ["xpath=//div[@id='map']/div/div[4]/img[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f36cfb31-647d-4a72-9e5d-d689b20d0a94",
+      "comment": "",
+      "command": "click",
+      "target": "css=.leaflet-marker-icon:nth-child(4)",
+      "targets": [
+        ["css=.leaflet-marker-icon:nth-child(4)", "css:finder"],
+        ["xpath=(//img[contains(@src,'http://grybb-4.paas.hosted-by-previder.com/GRYBB/resources/image/yellowtree.png')])[2]", "xpath:img"],
+        ["xpath=//div[@id='map']/div/div[4]/img[4]", "xpath:idRelative"],
+        ["xpath=//div[4]/img[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb471e9d-9b22-4be3-8ba1-305d8b6b6a52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container:nth-child(1) > .routerbtn",
+      "targets": [
+        ["css=.container:nth-child(1) > .routerbtn", "css:finder"],
+        ["xpath=//input[@value='Route your Selected Trees!']", "xpath:attributes"],
+        ["xpath=//div[@id='selectTrees']/label/input", "xpath:idRelative"],
+        ["xpath=//div[2]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e93de82-4dfa-496f-be4e-e9245175bc07",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container:nth-child(2) > .routerbtn",
+      "targets": [
+        ["css=.container:nth-child(2) > .routerbtn", "css:finder"],
+        ["xpath=//input[@value='Go Back calculating route!']", "xpath:attributes"],
+        ["xpath=//div[@id='selectTrees']/label[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "127205a5-6de6-4371-b500-9ed9c620f0b8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container:nth-child(2) > .routerbtn",
+      "targets": [
+        ["css=.container:nth-child(2) > .routerbtn", "css:finder"],
+        ["xpath=//input[@value='Go Back calculating route!']", "xpath:attributes"],
+        ["xpath=//div[@id='selectTrees']/label[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7870e180-1231-4bce-acb1-837572b4652b",
+      "comment": "",
+      "command": "click",
+      "target": "id=sidebar_btn",
+      "targets": [
+        ["id=sidebar_btn", "id"],
+        ["css=#sidebar_btn", "css:finder"],
+        ["xpath=//i[@id='sidebar_btn']", "xpath:attributes"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a9308b82-1af3-4b82-a12f-ac27305a5919",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a632bbfb-4804-4c1e-b0bb-e2fe86475097"]
+  }],
+  "urls": ["http://grybb-4.paas.hosted-by-previder.com/"],
+  "plugins": []
+}
